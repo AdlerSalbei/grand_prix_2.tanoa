@@ -2,10 +2,13 @@
 *   Hier können eigene Funktionen eingebunden werden.
 *   Ist in CfgFunctions included.
 */
-class grand_prix_2 {
-    class grand_prix_2 {
-        file = USER\functions;
+class grad_user {
+    class common {
+        file = USER\functions\common;
+        class addArtyEH {};
+        class calcShot {};
         class logRaceTime {};
         class raceCountdown {};
+        class shotTracker {};
     };
 };

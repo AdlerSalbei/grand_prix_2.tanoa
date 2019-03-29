@@ -2,7 +2,7 @@
 *   Legt allgemeine Information über die Mission fest.
 */
 
-author = "Slant & Salbei für Gruppe Adler";                                             // Missionsersteller
+author = "Slant, Nomisum & Salbei für Gruppe Adler";                                             // Missionsersteller
 onLoadName = "Grand Prix 2";                                                   // Name der Mission
 onLoadMission = "";                                                             // Beschreibung der Mission (wird im Ladebildschirm unterhalb des Ladebildes angezeigt)
 loadScreen = "data\loadpic.paa";                                                // Ladebild

@@ -108,7 +108,7 @@ class CfgMusic
 	class bennyHill
 	{
 		name	= "Benny Hill";
-		sound[]	= { "\data\bennyHill.ogg", db + 0, 1.0 };
+		sound[]	= { "\data\bennyHill.ogg", db + 10, 1.0 };
 	};
 };
 
