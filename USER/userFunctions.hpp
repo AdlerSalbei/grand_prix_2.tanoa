@@ -9,6 +9,8 @@ class grad_user {
         class calcShot {};
         class logRaceTime {};
         class raceCountdown {};
+        class resetRange {};
+        class setUpMinefield {};
         class shotTracker {};
     };
 };

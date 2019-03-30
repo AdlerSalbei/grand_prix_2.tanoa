@@ -5,6 +5,9 @@ class Header
 	gameType = Coop;
 };
 
+//description.ext
+__EXEC (MISSION_ROOT = __FILE__ select [0, count __FILE__ - 15])
+
 //MISSION SETTINGS =============================================================
 respawn = 3;
 respawnDelay = 10;
@@ -50,6 +53,7 @@ class CfgFunctions
 
     #include "node_modules\grad-loadout\cfgFunctions.hpp"
 	#include "node_modules\grad_vulcano\CfgFunctions.hpp"
+	#include "node_modules\grad_waterfall\CfgFunctions.hpp"
 
 	#include "USER\userFunctions.hpp"
 };
@@ -97,8 +101,16 @@ class CfgSounds {
 		sound[]	= { "\data\raceCountdown.ogg", db + 0, 1.0 };
 		titles[] = {};
 	};
+
+	class mexicanStandoff
+	{
+		name	= "mexicanStandoff";
+		sound[]	= { "\data\mexicanStandoff.ogg", db + 0, 1.0 };
+		titles[] = {};
+	};
 	#include "USER\userSounds.hpp"
 	#include "node_modules\grad_vulcano\CfgSound.hpp"
+	#include "node_modules\grad_waterfall\CfgSound.hpp"
 };
 
 //Music ========================================================================
