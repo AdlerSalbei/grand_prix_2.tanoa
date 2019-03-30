@@ -1,13 +1,11 @@
+params ["_number"];
+
+private _marker = format ["mineMarker_%1", _number];
 {
     deleteVehicle _x;
-}forEach allMines;
+}forEach (allMines inAreaArray _marker);
 
-{
-    private _marker = _x;
-
-    for "_i" from 1 to 10 do {
-        private _position = [_marker] call CBA_fnc_randPosArea;
-        createMine ["APERSMine", _position, [], 0];
-    };
-
-}forEach ["mineMarker_1", "mineMarker_2", "mineMarker_3", "mineMarker_4"];
+for "_i" from 1 to 40 do {
+    private _position = [_marker] call CBA_fnc_randPosArea;
+    createMine ["APERSMine", _position, [], 0];
+};

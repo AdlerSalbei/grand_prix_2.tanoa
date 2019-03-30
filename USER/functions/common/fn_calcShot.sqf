@@ -1,5 +1,9 @@
 params ["_pos"];
 
+if !(GRAND_PRIX_TRIGGER_Vulcano) then {
+    GRAND_PRIX_TRIGGER_Vulcano = true;
+    publicVariable "GRAND_PRIX_TRIGGER_Vulcano";
+};
 private _distance = [9976.15,12074.2,0] distance2D _pos;
 private _dir = [9976.15,12074.2,0] getDir _pos;
 private _heading = "";

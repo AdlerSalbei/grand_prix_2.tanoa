@@ -53,7 +53,6 @@ class CfgFunctions
 
     #include "node_modules\grad-loadout\cfgFunctions.hpp"
 	#include "node_modules\grad_vulcano\CfgFunctions.hpp"
-	#include "node_modules\grad_waterfall\CfgFunctions.hpp"
 
 	#include "USER\userFunctions.hpp"
 };
@@ -110,7 +109,6 @@ class CfgSounds {
 	};
 	#include "USER\userSounds.hpp"
 	#include "node_modules\grad_vulcano\CfgSound.hpp"
-	#include "node_modules\grad_waterfall\CfgSound.hpp"
 };
 
 //Music ========================================================================

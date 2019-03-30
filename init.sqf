@@ -9,3 +9,4 @@ enableSaving [false, false];
 // SCRIPTS =====================================================================
 [] execVM "USER\userInit.sqf";
 nopop = true;
+GRAND_PRIX_TRIGGER_Vulcano = false;
