@@ -1,4 +1,8 @@
-params ["_pos"];
+#include "script_component.hpp"
+
+params ["_pos", "_user"];
+
+if (isNil "_pos") exitWith {};
 
 if !(GRAND_PRIX_TRIGGER_Vulcano) then {
     GRAND_PRIX_TRIGGER_Vulcano = true;
@@ -28,5 +32,5 @@ switch (true) do {
 _distance = ((round(_distance/10))*10);
 private _message = format ["%1, %2m %3 vom Zielpunkt.", _text, _distance, _heading];
 
-(format ["GRPX2: Group: %1 Result: %2", (group player), _message]) remoteExec ["diag_log", 2];
-_message remoteExec ["hint", (group player)];
+(format ["GRPX2: Group: %1 Result: %2", (group _user), _message]) remoteExec ["diag_log", 2];
+_message remoteExec ["hint", (group _user)];

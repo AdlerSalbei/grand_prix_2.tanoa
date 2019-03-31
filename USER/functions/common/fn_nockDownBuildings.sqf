@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 //[[10031.5,11788.9,0], 150] execVM "USER\functions\fn_nockDownBuildings.sqf";
 
 params ["_pos", "_distance"];

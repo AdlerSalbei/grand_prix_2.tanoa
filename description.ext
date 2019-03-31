@@ -53,6 +53,7 @@ class CfgFunctions
 
     #include "node_modules\grad-loadout\cfgFunctions.hpp"
 	#include "node_modules\grad_vulcano\CfgFunctions.hpp"
+	#include "node_modules\grad_fireworks\cfgFunctions.hpp"
 
 	#include "USER\userFunctions.hpp"
 };
@@ -97,28 +98,36 @@ class CfgSounds {
 	class raceCountdown
 	{
 		name	= "raceCountdown";
-		sound[]	= { "\data\raceCountdown.ogg", db + 0, 1.0 };
+		sound[]	= {"\data\raceCountdown.ogg", db + 0, 1.0 };
 		titles[] = {};
 	};
 
 	class mexicanStandoff
 	{
 		name	= "mexicanStandoff";
-		sound[]	= { "\data\mexicanStandoff.ogg", db + 0, 1.0 };
+		sound[]	= {"\data\mexicanStandoff.ogg", db + 0, 1.0 };
 		titles[] = {};
 	};
+
 	#include "USER\userSounds.hpp"
 	#include "node_modules\grad_vulcano\CfgSound.hpp"
+	#include "node_modules\GRAD_fireworks\cfgSounds.hpp"
 };
 
 //Music ========================================================================
 class CfgMusic
 {
 	tracks[] = {};
+	class pirateTheme
+	{
+		name	= "pirateTheme";
+		sound[]	= {"\data\pirateTheme.ogg", db + 10, 1.0 };
+	};
+
 	class bennyHill
 	{
 		name	= "Benny Hill";
-		sound[]	= { "\data\bennyHill.ogg", db + 10, 1.0 };
+		sound[]	= {"\data\bennyHill.ogg", db + 10, 1.0 };
 	};
 };
 

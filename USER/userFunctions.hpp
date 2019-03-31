@@ -7,7 +7,10 @@ class grad_user {
         file = USER\functions\common;
         class addArtyEH {};
         class calcShot {};
+        class fireworks {};
         class logRaceTime {};
+        class nockDownBuildings {};
+        class playRaceSound {};
         class raceCountdown {};
         class resetRange {};
         class setUpMinefield {};

@@ -23,11 +23,3 @@ grad_template_ratingEH = player addEventHandler ["HandleRating",{0}];
         },[],1] call CBA_fnc_waitAndExecute;
     },[],1] call CBA_fnc_waitAndExecute;
 }] call CBA_fnc_addEventHandler;
-
-private _root = parsingNamespace getVariable "MISSION_ROOT";
-
-[{
-    params ["_root", "_handle"];
-    
-    playSound3D [format ["%1data\morse.ogg", _root], morse_player, false, getPosASL morse_player, 5, 1, 50];
-},110,_root] call CBA_fnc_addPerFrameHandler;

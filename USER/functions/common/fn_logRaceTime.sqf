@@ -1,7 +1,7 @@
-params ["_unit"];
+params ["_unit", "_typ", "_gvar"];
 
 private _endTime = time;
-private _startTime = _unit getVariable ["grand_prix_2_raceTime", 0];
+private _startTime = _unit getVariable [_gvar, 0];
 private _time = _endTime - _startTime;
 private _seconds = floor (_time);
 private _min = floor (_time / 60);
@@ -13,4 +13,4 @@ if (_time > 60) then {
 private _infoTime = format ["%1min %2sec", _min, _seconds];
 
 hint _infoTime;
-(format ["GRPX2: RACE TIME, Player: %1, Time: %2", _unit, _infoTime]) remoteExec ["diag_log", 2];
+(format ["GRPX2: %1, Player: %2, Time: %3", _typ, _unit, _infoTime]) remoteExec ["diag_log", 2];

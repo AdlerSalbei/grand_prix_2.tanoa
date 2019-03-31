@@ -1,3 +1,5 @@
+#include "script_component.hpp"
+
 params ["_arty"];
 
 _arty addEventHandler ["Fired", {

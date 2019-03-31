@@ -1,3 +1,4 @@
+#include "script_component.hpp"
 params ["_number"];
 
 private _marker = format ["mineMarker_%1", _number];
